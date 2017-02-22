@@ -61,6 +61,61 @@ div.login, div.register
     vertical-align: middle;
 }
 
+/*********************************
+
+used by main page
+
+*********************************/
+
+section 
+{
+	float: left;
+	width: 70%;
+	margin-left: 20px;
+}
+
+aside 
+{
+	float: right;
+	width: 25%;
+	margin-right: 30px;
+}
+
+div.content
+{
+	background: #808080;	/* for browsers that don't support gradient */
+	background: -webkit-linear-gradient(left, #808080 20%, #5E5E5E);	/* chrome support */
+	background: -moz-linear-gradient(left, #808080 20%, #5E5E5E);	/* firefox support */
+	margin: 5px;
+	margin-top: 30px;
+	margin-bottom: 60px;
+	padding: 10px;
+	border: 10px outset #A1A1A1;
+	box-shadow: 20px 20px 20px #000000;
+}
+
+div.issue
+{
+	background: #BFBFBF;
+	padding: 20px;
+	margin: 20px;
+}
+
+.issue td, .issue th
+{
+	text-align: left;
+	padding: 10px;
+	vertical-align: top;
+	line-height: 30px;
+}
+
+.issue th
+{
+	font-weight: bold;
+	font-size: 32px;
+	padding-bottom: 20px;
+}
+
 body 
 {
 	overflow: scroll;
