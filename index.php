@@ -8,7 +8,14 @@
   </head>
 
   <body>
-    <section>
+    <nav>
+	  <ul>
+	    <li id="title">Landlord/Tenant Platform</li>
+		<li id="account">user_name</li>
+	  </ul>
+	</nav>
+	  
+    <section>	
 	  <div class="content">
 		<div id="issuesList">
 		  <div class="issue">
