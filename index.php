@@ -13,14 +13,14 @@
 		<div id="issuesList">
 		  <div class="issue">
 		    <table>
-			  <col width="80%">
+			  <col class="leftCol">
 			  
 			  <tr>
 			    <th>Issue Title</th>
 				<td>Issued By: user_name</td>
 			  </tr>
 			  
-			  <tr>
+			  <tr class="bottomRow">
 			    <td class="description">
 				Lorem ipsum dolor sit amet, pri eius alienum at. Duo ei affert putent facete, possit accusam quo id. Ei nec sale nullam interpretaris, vel id euismod mandamus salutandi, cu usu fugit ornatus signiferumque. Ea has habeo democritum. Sed ea adipisci vulputate comprehensam, graecis ancillae accusata vel ea.
 
@@ -40,14 +40,14 @@
 		  
 		  <div class="issue">
 		    <table>
-			  <col width="80%">
+			  <col class="leftCol">
 			  
 			  <tr>
 			    <th>Issue Title</th>
 				<td>Issued By: user_name</td>
 			  </tr>
 			  
-			  <tr>
+			  <tr class="bottomRow">
 			    <td class="description">
 				Lorem ipsum dolor sit amet, pri eius alienum at. Duo ei affert putent facete, possit accusam quo id. Ei nec sale nullam interpretaris, vel id euismod mandamus salutandi, cu usu fugit ornatus signiferumque. Ea has habeo democritum. Sed ea adipisci vulputate comprehensam, graecis ancillae accusata vel ea.
 
@@ -67,14 +67,14 @@
 		  
 		  <div class="issue">
 		    <table>
-			  <col width="80%">
+			  <col class="leftCol">
 			  
 			  <tr>
 			    <th>Issue Title</th>
 				<td>Issued By: user_name</td>
 			  </tr>
 			  
-			  <tr>
+			  <tr class="bottomRow">
 			    <td class="description">
 				Lorem ipsum dolor sit amet, pri eius alienum at. Duo ei affert putent facete, possit accusam quo id. Ei nec sale nullam interpretaris, vel id euismod mandamus salutandi, cu usu fugit ornatus signiferumque. Ea has habeo democritum. Sed ea adipisci vulputate comprehensam, graecis ancillae accusata vel ea.
 

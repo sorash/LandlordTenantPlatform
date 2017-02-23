@@ -99,6 +99,7 @@ div.issue
 	background: #BFBFBF;
 	padding: 20px;
 	margin: 20px;
+	border: 3px solid black;
 }
 
 .issue td, .issue th
@@ -114,6 +115,17 @@ div.issue
 	font-weight: bold;
 	font-size: 32px;
 	padding-bottom: 20px;
+}
+
+.leftCol
+{
+	width: 80%;
+	border-right: 1px solid black;
+}
+
+.bottomRow
+{
+	border-top: 1px solid black;
 }
 
 body 
