@@ -1,6 +1,6 @@
 body 
 {
-	overflow: hidden;
+	overflow: scroll;
 	height: 100vh;
 	background: #595959;	/* for browsers that don't support gradient */
 	background: -webkit-linear-gradient(top, #595959, #262626);	/* chrome support */
@@ -8,17 +8,11 @@ body
 	background-attachment: fixed;	/* fixes cut off of background */
 }
 
-/*********************************
-
-used by login and register pages
-
-*********************************/
-
 @media screen and (max-width: 1920px) 
 {
 	body
 	{
-		width: 1920px;
+		width: 1900px;
 	}
 }
 
@@ -26,7 +20,7 @@ used by login and register pages
 {
 	body
 	{
-		width: 1366px;
+		width: 1346px;
 	}
 }
 
@@ -34,75 +28,9 @@ used by login and register pages
 {
 	body
 	{
-		width: 1280px;
+		width: 1260px;
 	}
 }
-
-div.half
-{
-    float: left;
-	width: 50%;
-    height: 100%;
-	
-    display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-div.parent 
-{
-    height: 100%;
-}
-
-form
-{
-	padding: 20px;
-	border: 1px solid white;
-}
-
-.login input[type=text], .login input[type=password] 
-{
-    width: 100%;
-    padding: 12px 0px;
-    margin: 8px 0;
-    border: 1px solid #ccc;
-}
-
-.register input[type=text], .register input[type=password], .register input[type=email] 
-{
-    width: 100%;
-    padding: 12px 0px;
-    margin: 8px 0;
-    border: 1px solid #ccc;
-}
-
-.register input[type=radio]
-{
-	margin-left: 10px;
-	margin-right: 5px;
-}
-
-button
-{
-	padding: 10px;
-}
-
-.center
-{
-	/* center div inside parent */
-	display: table;
-    margin: auto;
-	
-	/* center elements */
-	text-align: center;
-    vertical-align: middle;
-}
-
-/*********************************
-
-used by main page
-
-*********************************/
 
 section 
 {

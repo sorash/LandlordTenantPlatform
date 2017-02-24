@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <title>Landlord/Tenant Platform</title>
 	<link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="css/sitecss.css"   type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/main.css"   type="text/css" media="screen" />
   </head>
 
   <body>
