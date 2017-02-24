@@ -1,36 +1,63 @@
+body 
+{
+	overflow: hidden;
+	height: 100vh;
+	background: #595959;	/* for browsers that don't support gradient */
+	background: -webkit-linear-gradient(top, #595959, #262626);	/* chrome support */
+	background: -moz-linear-gradient(top, #595959, #262626);	/* firefox support */
+	background-attachment: fixed;	/* fixes cut off of background */
+}
+
 /*********************************
 
 used by login and register pages
 
 *********************************/
 
-form.login, form.register
+@media screen and (max-width: 1920px) 
 {
-	width: 800px;
-	height: 0;
-
-	/* position form in center of screen */
-	position: absolute;
-	top:0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	margin: auto;
+	body
+	{
+		width: 1920px;
+	}
 }
 
-div.login, div.register
+@media screen and (max-width: 1366px) 
 {
-    padding: 16px;
+	body
+	{
+		width: 1366px;
+	}
+}
+
+@media screen and (max-width: 1280px) 
+{
+	body
+	{
+		width: 1280px;
+	}
+}
+
+div.half
+{
+    float: left;
+	width: 50%;
+    height: 100%;
 	
-	border: 3px solid #f1f1f1;
-	
-	/* position div in center of form */
-	top: 50%;
-	transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	-moz-transform: translateY(-50%);
-	-webkit-transform: translateY(-50%);
-	-o-transform: translateY(-50%);
+    display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+div.parent 
+{
+    height: 100%;
+}
+
+form
+{
+	padding: 20px;
+	border: 1px solid white;
 }
 
 .login input[type=text], .login input[type=password] 
@@ -49,11 +76,21 @@ div.login, div.register
     border: 1px solid #ccc;
 }
 
+.register input[type=radio]
+{
+	margin-left: 10px;
+	margin-right: 5px;
+}
+
+button
+{
+	padding: 10px;
+}
+
 .center
 {
 	/* center div inside parent */
 	display: table;
-	width: 30%;
     margin: auto;
 	
 	/* center elements */
@@ -159,13 +196,4 @@ nav li
 {
 	float: right;
 	padding-right: 40px;
-}
-
-body 
-{
-	overflow: scroll;
-	background: #595959;	/* for browsers that don't support gradient */
-	background: -webkit-linear-gradient(top, #595959, #262626);	/* chrome support */
-	background: -moz-linear-gradient(top, #595959, #262626);	/* firefox support */
-	background-attachment: fixed;	/* fixes cut off of background */
 }
