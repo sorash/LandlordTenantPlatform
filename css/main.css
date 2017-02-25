@@ -1,7 +1,7 @@
 body 
 {
 	overflow: scroll;
-	height: 100vh;
+	overflow-x: hidden;
 	background: #595959;	/* for browsers that don't support gradient */
 	background: -webkit-linear-gradient(top, #595959, #262626);	/* chrome support */
 	background: -moz-linear-gradient(top, #595959, #262626);	/* firefox support */
@@ -12,7 +12,7 @@ body
 {
 	body
 	{
-		width: 1900px;
+		width: 1920px;
 	}
 }
 
@@ -20,7 +20,7 @@ body
 {
 	body
 	{
-		width: 1346px;
+		width: 1366px;
 	}
 }
 
@@ -28,7 +28,7 @@ body
 {
 	body
 	{
-		width: 1260px;
+		width: 1280px;
 	}
 }
 
@@ -79,7 +79,7 @@ div.issue
 {
 	font-weight: bold;
 	font-size: 32px;
-	padding-bottom: 20px;
+	line-height: 40px;
 }
 
 .leftCol
