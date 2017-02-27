@@ -79,10 +79,11 @@ a:hover
 
 input[type=text], input[type=password], input[type=email] 
 {
-	width: 95%;
+	width: 100%;
     display: block;
     padding: 10px;
     margin: 20px auto;
+    box-sizing: border-box;
     color: #353531;
     font-size: 120%;
 }
@@ -90,7 +91,6 @@ input[type=text], input[type=password], input[type=email]
 #forgot
 {
 	text-align: right;
-	padding-right: 5px;
 }
 
 button
@@ -108,7 +108,6 @@ button
 
 label
 {
-	margin: auto 5px;
     font-size: 150%;
 }
 
@@ -120,4 +119,28 @@ input[type="checkbox"]
 #center
 {
 	text-align: center;
+}
+
+@media screen and (max-width: 1248px)
+{
+	#header, #content, #register
+	{
+		width: 40%;
+	}
+}
+
+@media screen and (max-width: 854px)
+{
+	#header, #content, #register
+	{
+		width: 60%;
+	}
+}
+
+@media screen and (max-width: 768px)
+{
+	#header, #content, #register
+	{
+		width: 80%;
+	}
 }
