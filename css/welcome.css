@@ -175,6 +175,20 @@ button
 	width: 50%;
 }
 
+.error
+{
+	width: 80%;
+	padding: 0 10px 0 10px;
+	font-size: 110%;
+	color: #BA0E31;
+	margin: -10px auto auto auto;
+}
+
+#userType .error
+{
+	margin: auto;
+}
+
 @media screen and (max-width: 854px)
 {
 	#logo

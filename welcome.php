@@ -1,3 +1,15 @@
+<?php
+
+// error messages
+$firstNameError = "";
+$lastNameError = "";
+$emailError = "";
+$passwordError = "";
+$password2Error = "";
+$userTypeError = "";
+
+?>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -36,15 +48,21 @@
       <aside id="register">
         <form method="POST">
           <input type="text" placeholder="Enter First Name" name="firstName" id="firstName" data-validation="custom" data-validation-regexp="^([a-zA-Z]+)$" required>
+          <p class="error"><?php echo $firstNameError; ?></p>
           <input type="text" placeholder="Enter Last Name" name="lastName" id="lastName"   data-validation="custom" data-validation-regexp="^([a-zA-Z]+)$" required>
+          <p class="error"><?php echo $lastNameError; ?></p>
           <input type="email" placeholder="Enter Email" name="email" id="email" data-validation="email" required>
+          <p class="error"><?php echo $emailError; ?></p>
           <input type="password" placeholder="Enter Password" name="pass_confirmation" data-validation="strength" data-validation-strength="2" required>
-          <input type="password" placeholder="Enter Password Again" name="pass" data-validation="confirmation"  type="password" required> 
+          <p class="error"><?php echo $passwordError; ?></p>
+          <input type="password" placeholder="Enter Password Again" name="pass" data-validation="confirmation"  type="password" required>
+          <p class="error"><?php echo $password2Error; ?></p>
 
           <div id="userType">
             <label>I am a:</label>
             <input type="radio" name="userType" id="landlord"><label for="landlord">Landlord</label>
             <input type="radio" name="userType" id="tenant"><label for="tenant">Tenant</label>
+            <p class="error"><?php echo $userTypeError; ?></p>
           </div>
 
           <button type="submit">Sign Up</button>
