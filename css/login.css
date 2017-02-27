@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+*
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body
+{
+	background-color: #353531;
+	color: #C4CBCA;
+	margin: 0;
+	font-family: 'PT', sans;
+}
+
+#logo
+{
+	width: 200px;
+	height: 70px;
+	background: url(../img/logo.png) no-repeat center;
+	margin: auto;
+}
+
+.inner-wrapper
+{
+	width: 100%;
+}
+
+#header
+{
+	width: 50%;
+	margin: 50px auto;
+}
+
+#content
+{
+	width: 30%;
+	margin: auto;
+	border: 2px solid #016FB9;
+	border-radius: 20px;
+	padding: 20px 30px 20px 30px;
+}
+
+#header a
+{
+	display: block;
+}
+
+#register
+{
+	text-align: center;
+	font-size: 150%;
+	margin: 20px auto;
+}
+
+#register a
+{
+	color: #00B31B;
+}
+
+h1
+{
+	margin: auto;
+	text-align: center;
+}
+
+a
+{
+	color: #BA0E31;
+	text-decoration: none;
+}
+
+a:hover
+{
+	text-decoration: underline;
+}
+
+input[type=text], input[type=password], input[type=email] 
+{
+	width: 95%;
+    display: block;
+    padding: 10px;
+    margin: 20px auto;
+    color: #353531;
+    font-size: 120%;
+}
+
+#forgot
+{
+	text-align: right;
+	padding-right: 5px;
+}
+
+button
+{
+	display: block;
+	padding: 10px;
+    color: #353531;
+    border-radius: 10px;
+    font-size: 150%;
+    background-color: #1CB041;
+    color: #E7CDC6;
+	width: 50%;
+	margin: 20px auto
+}
+
+label
+{
+	margin: auto 5px;
+    font-size: 150%;
+}
+
+input[type="checkbox"]
+{
+	margin: 10px 10px;
+}
+
+#center
+{
+	text-align: center;
+}
