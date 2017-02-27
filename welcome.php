@@ -2,9 +2,10 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Welcome to LTP</title>
-	<link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="css/welcome.css"   type="text/css" media="screen" />
+	  <link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen" />
+	  <link rel="stylesheet" href="css/welcome.css"   type="text/css" media="screen" />
   </head>
 
   <body>
@@ -13,11 +14,14 @@
         <a id="logo"></a>
 
         <nav>
+          <a id="menu"></a>
+
           <ul>
             <li><a href="https://github.com/sorash/LandlordTenantPlatform" target="_blank">Source Code</a></li>
             <li><a href="http://civictech.ca/codeacross-toronto-2017/" target="_blank">CodeAcross Toronto 2017</a></li>
 
             <li class="right">Already a member? <a href="login.php">Login</a></li>
+            <li class="right" id="mobile"><a href="login.php">Login</a></li>
           </ul>
         </nav>
       </div>
@@ -38,7 +42,7 @@
           <input type="password" placeholder="Enter Password Again" name="pass" data-validation="confirmation"  type="password" required> 
 
           <div id="userType">
-            <label>I am:</label>
+            <label>I am a:</label>
             <input type="radio" name="userType" id="landlord"><label for="landlord">Landlord</label>
             <input type="radio" name="userType" id="tenant"><label for="tenant">Tenant</label>
           </div>

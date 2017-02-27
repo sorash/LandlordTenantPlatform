@@ -51,6 +51,7 @@ nav
 nav ul
 {
 	list-style-type: none;
+	display: inline;
 }
 
 nav ul li
@@ -92,6 +93,11 @@ nav ul li.right a:hover
 {
 	color: #BA0E31;
 	text-decoration: underline;
+}
+
+#mobile, #menu
+{
+	display: none;
 }
 
 .inner-wrapper
@@ -187,4 +193,103 @@ button
     background-color: #1CB041;
     color: #E7CDC6;
 	width: 50%;
+}
+
+@media screen and (max-width: 854px)
+{
+	#logo
+	{
+		margin-left: -30px;
+		background: url(../img/logo_mobile.png) no-repeat center;
+	}
+
+	#menu
+	{
+		float: right;
+		margin-right: 10px;
+		display: inline-block;
+		width: 50px;
+		height: 50px;
+		background: url(../img/menu.png) no-repeat center;
+	}
+
+	nav ul, nav:active ul
+	{
+		display: none;
+		z-index: 1000;
+		position: absolute;
+		background-color: #016FB9;
+		padding: 10px;
+		border: 1px solid #fff;
+		border-radius: 10px 0 10px 10px;
+		right: 10px;
+		top: 60px;
+		width: 50%;
+	}
+
+	nav:hover ul
+	{
+		display: block;
+	}
+
+	nav li
+	{
+		text-align: center;
+		width: 100%;
+		padding: 10px 0;
+		float: right;
+		margin-right: -15px;
+	}
+
+	nav ul li + li 
+	{ 
+		border: 0;
+	}
+
+	nav ul li.right:not(#mobile)
+	{
+		display: none;
+	}
+
+	#mobile
+	{
+		display: inline-block;
+	}
+
+	#information h1
+	{
+		font-size: 220%;
+		margin-left: 5%;
+		width: 90%;
+		text-align: center;
+	}
+
+	#information h2
+	{
+		font-size: 150%;
+		margin-left: 5%;
+		width: 90%;
+		text-align: center;
+		font-weight: 100;
+		margin-top: -10px;
+	}
+
+	.inner-wrapper
+	{
+		margin-top: 80px;
+		display: block;
+	}
+
+	#information
+	{
+		float: left;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	#register
+	{
+		float: left;
+		width: 100%;
+	}
 }
