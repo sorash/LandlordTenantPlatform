@@ -139,30 +139,10 @@ nav ul li.right a:hover
 {
 	width: 80%;
     display: block;
-    padding: 12px 0px;
+    padding: 10px;
     margin: 20px auto;
     color: #353531;
     font-size: 120%;
-}
-
-#register ::-webkit-input-placeholder
-{
-	padding: 10px;
-}
-
-#register ::-moz-placeholder 
-{
-	padding: 10px;
-}
-
-#register :-ms-input-placeholder 
-{
-	padding: 10px;
-}
-
-#register :-moz-placeholder 
-{
-	padding: 10px;
 }
 
 #userType
