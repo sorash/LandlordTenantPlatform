@@ -121,6 +121,14 @@ input[type="checkbox"]
 	text-align: center;
 }
 
+.error
+{
+	padding: 0 10px 0 10px;
+	font-size: 110%;
+	color: #BA0E31;
+	margin: -10px auto 20px auto;
+}
+
 @media screen and (max-width: 1248px)
 {
 	#header, #content, #register

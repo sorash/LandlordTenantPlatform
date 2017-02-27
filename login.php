@@ -1,3 +1,11 @@
+<?php
+
+// error messages
+$emailError = "";
+$passwordError = "";
+
+?>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -20,9 +28,11 @@
           <form method="POST">
             <label>Email:</label>
             <input type="text" placeholder="Enter Email" name="email" id="email" required>
+            <p class="error"><?php echo $emailError; ?></p>
 
             <label>Password:</label>
-            <input type="text" placeholder="Enter Password" name="password" id="password" required>
+            <input type="password" placeholder="Enter Password" name="password" id="password" required>
+            <p class="error"><?php echo $passwordError; ?></p>
 
             <div id="forgot">
               <a href="#">Recover Forgotten Password</a>
