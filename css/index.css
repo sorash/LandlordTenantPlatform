@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+*
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body
+{
+	background-color: #353531;
+	color: #C4CBCA;
+	margin: 0;
+	font-family: 'PT', sans;
+}
+
+header
+{
+	position: absolute;
+	background-color: #016FB9;
+	width: 100%;
+	height: 70px;
+}
+
+#header-inner
+{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+#logo
+{
+	float: left;
+	width: 200px;
+	height: 70px;
+	background: url(../img/logo.png) no-repeat center;
+}
+
+nav
+{
+	padding-top: 10px;
+}
+
+nav ul
+{
+	list-style-type: none;
+	display: inline;
+}
+
+nav ul li
+{
+	font-size: 130%;
+	display: inline-block;
+	padding: 15px;
+	color: #353531;
+}
+
+nav ul li a
+{
+	color: #E7CDC6;
+	text-decoration: none;
+}
+
+nav ul li a:hover
+{
+	color: #BA0E31;
+}
+
+nav ul li.right
+{
+	float: right;
+}
+
+.inner-wrapper
+{
+	float: left;
+	width: 100%;
+	margin-top: 70px;
+}
+
+#issue-list
+{
+	float: left;
+	width: 80%;
+}
+
+#information
+{
+	float: right;
+	width: 20%;
+}
+
+#issue-list-inner
+{
+	margin: 30px;
+}
+
+#information-inner
+{
+	margin: 30px;
+}
+
+.issue
+{
+	background-color: #66665E;
+}
+
+table
+{
+	width: 100%;1
+}
+
+table tr td, table tr th
+{
+	padding: 20px;
+	border: 1px solid #000;
+}
+
+table tr th
+{
+	width: 80%;
+	text-align: left;
+	font-size: 120%;
+}
+
+.issue
+{
+	margin-bottom: 20px;
+}
+
+.issue-bar
+{
+	color: #BA0E31;
+	font-size: 110%;
+	background-color: #00B31B;
+	border: 1px solid #000;
+}
+
+.issue-bar td
+{
+	padding: 0 20px 0 20px;
+	border: 0;
+	padding: 5px;
+}
+
+.issue-bar a
+{
+	float: right;
+	width: 25px;
+	height: 25px;
+	background: url(../img/view_icon.png) no-repeat center;
+	background-size: 25px;
+}
