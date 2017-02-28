@@ -29,7 +29,7 @@
     <section class="inner-wrapper">
       <article id="issue-list">
         <div id="issue-list-inner">
-          <h1>Current Issues</h1>
+          <h1>Issue History</h1>
 
           <div class="issue">
             <table>
