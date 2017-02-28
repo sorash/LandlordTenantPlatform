@@ -17,10 +17,10 @@
           <a id="menu"></a>
 
           <ul>
-            <li><a href="#">Create Issue</a></li>
-
-            <li class="right"><a href="logout.php">Logout</a></li>
-            <li class="right"><a href="profile.php">Profile</a></li>
+            <li><a href="create.php">Create Issue</a></li>
+            <li><a href="index.php">Current Issues</a></li>
+            <li><a href="history.php">Issue History</a></li>
+            <li><a href="logout.php">Logout</a></li>
           </ul>
         </nav>
       </div>
@@ -29,7 +29,7 @@
     <section class="inner-wrapper">
       <article id="issue-list">
         <div id="issue-list-inner">
-          <h1>Previous Issues</h1>
+          <h1>Issue History</h1>
 
           <div class="issue">
             <table>
@@ -92,8 +92,57 @@
 
       <aside id="information">
         <div id="information-inner">
-          <h1>Property Information</h1>
-          <p>hello</p>
+          <div id="profile">
+            <h1>Profile</h1>
+
+            <p>full_name</p>
+            <p>email</p>
+            <p>phone</p>
+          </div>
+
+          <div id="property">
+            <h1>Property</h1>
+
+            <p>address</p>
+            <p>tenant_count</p>
+            <p>type</p>
+          </div>
+
+          <div id="landlord">
+            <h1>Landlord</h1>
+
+            <p>full_name</p>
+            <p>email</p>
+            <p>phone</p>
+          </div>
+
+          <div id="tenants">
+            <h1>Tenants</h1>
+
+            <h2>tenant_full_name</h2>
+            <p>tenant_email</p>
+            <p>tenant_phone</p>
+
+            <hr />
+
+            <h2>tenant_full_name</h2>
+            <p>tenant_email</p>
+            <p>tenant_phone</p>            
+          </div>
+
+          <div id="roommates">
+            <h1>Roommates</h1>
+
+            <h2>roommate_full_name</h2>
+            <p>roommate_email</p>
+            <p>roommate_phone</p>
+
+            <hr />
+
+            <h2>roommate_full_name</h2>
+            <p>roommate_email</p>
+            <p>roommate_phone</p>            
+          </div>
         </div>
       </aside>
     </section>
