@@ -214,7 +214,7 @@ hr
 		background: url(../img/logo_mobile.png) no-repeat center;
 	}
 
-		#menu
+	#menu
 	{
 		float: right;
 		margin-right: 10px;
@@ -284,7 +284,7 @@ hr
 	{
 		cursor: pointer;
 		display: block;
-		margin: 20px 10px 0 10px;
+		margin: 20px 0 0 0;
 		color: #BA0E31;
 		background-color: #00B31B;
 		padding: 10px;
@@ -312,14 +312,14 @@ hr
 		display:block;
 	}
 
+	#information-inner div
+	{
+		margin: 0 auto;
+	}
+
 	#information h1
 	{
 		display: none;
-	}
-
-	#information div
-	{
-		margin: 0 10px;
 	}
 
 	.drop-down-icon
@@ -329,5 +329,10 @@ hr
 		height: 25px;
 		background: url(../img/down_arrow.png) no-repeat center;
 		background-size: 25px;
+	}
+
+	#issue-list-inner h1
+	{
+		margin-top: -5%;
 	}
 }
