@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+*
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body
+{
+	background-color: #353531;
+	color: #C4CBCA;
+	margin: 0;
+	font-family: 'PT', sans;
+}
+
+header
+{
+	position: absolute;
+	background-color: #016FB9;
+	width: 100%;
+	height: 70px;
+}
+
+#header-inner
+{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+#logo
+{
+	float: left;
+	width: 200px;
+	height: 70px;
+	background: url(../img/logo.png) no-repeat center;
+}
+
+nav
+{
+	float: right;
+	padding-top: 10px;
+}
+
+nav ul
+{
+	list-style-type: none;
+	display: inline;
+}
+
+nav ul li
+{
+	font-size: 130%;
+	display: inline-block;
+	padding: 15px;
+	color: #353531;
+}
+
+nav ul li a
+{
+	color: #E7CDC6;
+	text-decoration: none;
+}
+
+nav ul li a:hover
+{
+	color: #BA0E31;
+}
+
+.inner-wrapper
+{
+	float: left;
+	width: 100%;
+	margin-top: 70px;
+}
+
+#create
+{
+	float: left;
+	width: 80%;
+}
+
+#information
+{
+	float: right;
+	width: 20%;
+}
+
+#create-inner
+{
+	margin: 30px;
+}
+
+#information-inner
+{
+	margin-right: 20px;
+}
+
+table
+{
+	width: 100%;
+}
+
+table tr
+{
+	border: 1px solid #000;
+}
+
+table tr td, table tr th
+{
+	padding: 20px;
+	border: 1px solid #000;
+}
+
+table tr th
+{
+	width: 80%;
+	text-align: left;
+	font-size: 120%;
+}
+
+#information-inner div
+{
+	background-color: #66665E;
+	padding: 10px;
+	margin: 20px auto 20px auto;
+	border: 1px solid #000;
+}
+
+#profile
+{
+	padding: 20px
+}
+
+#information-inner h1
+{
+	color: #BA0E31;
+	background-color: #00B31B;
+	margin: -10px -10px 10px -10px;
+	padding: 10px;
+	font-size: 170%;
+	border-bottom: 1px solid #000;
+}
+
+#information-inner h2
+{
+	font-size: 130%;
+	margin-bottom: 10px;
+}
+
+hr
+{
+    border-style: inset;
+    border-width: 1px;
+    margin: 20px 0 20px 0;
+	border-color: #BA0E31;
+}
+
+.collapse
+{
+	display: none;
+}
+
+.collapse + input[type=checkbox]
+{
+	display: none;
+}
+
+.collapse + input:checked + div
+{
+	display:none;
+}
+
+input[type=text], input[type=password], input[type=email], textarea
+{
+	width: 100%;
+    display: block;
+    padding: 10px;
+    margin: 20px auto;
+    box-sizing: border-box;
+    color: #353531;
+    font-size: 120%;
+}
+
+textarea
+{
+	resize: none;
+	height: 300px;
+}
+
+button
+{
+	display: block;
+	padding: 15px;
+    border-radius: 10px;
+    font-size: 150%;
+    background-color: #1CB041;
+    color: #E7CDC6;
+    margin: 30px 0;
+}
+
+select
+{
+	height: 30px;
+	color: #000;
+	margin-left: 10px;
+}
+
+label
+{
+    font-size: 150%;
+}
+
+@media screen and (max-width: 1248px)
+{
+	#logo
+	{
+		margin-left: -30px;
+		background: url(../img/logo_mobile.png) no-repeat center;
+	}
+
+	#menu
+	{
+		float: right;
+		margin-right: 10px;
+		display: inline-block;
+		width: 50px;
+		height: 50px;
+		background: url(../img/menu.png) no-repeat center;
+	}
+
+	nav ul, nav:active ul
+	{
+		display: none;
+		z-index: 1000;
+		position: absolute;
+		background-color: #016FB9;
+		padding: 10px;
+		border: 1px solid #fff;
+		border-radius: 10px 0 10px 10px;
+		right: 10px;
+		top: 60px;
+		width: 50%;
+	}
+
+	nav:hover ul
+	{
+		display: block;
+	}
+
+	nav li
+	{
+		text-align: center;
+		width: 100%;
+		padding: 10px 0;
+		float: right;
+		margin-right: -15px;
+	}
+
+	.inner-wrapper
+	{
+		display: flex;
+		flex-flow: column;
+	}
+
+	#create
+	{
+		width: 100%;
+		order: 2;
+	}
+
+	#create-inner
+	{
+		margin: 5%;
+	}
+
+	#information
+	{
+		order: 1;
+		width: 100%;
+	}
+
+	#information-inner
+	{
+		margin: 5%;
+	}
+
+	.collapse
+	{
+		cursor: pointer;
+		display: block;
+		margin: 20px 0 0 0;
+		color: #BA0E31;
+		background-color: #00B31B;
+		padding: 10px;
+		font-size: 130%;
+		border: 1px solid #000;
+	}
+
+	div + .collapse
+	{
+		margin-top: 10px;
+	}
+
+	.collapse + input[type=checkbox]
+	{
+		display: none;
+	}
+
+	.collapse + input[type=checkbox] + div
+	{
+		display:none;
+	}
+
+	.collapse + input:checked + div
+	{
+		display:block;
+	}
+
+	#information-inner div
+	{
+		margin: 0 auto;
+	}
+
+	#information h1
+	{
+		display: none;
+	}
+
+	.drop-down-icon
+	{
+		float: right;
+		width: 25px;
+		height: 25px;
+		background: url(../img/down_arrow.png) no-repeat center;
+		background-size: 25px;
+	}
+
+	#create-inner h1
+	{
+		margin-top: -5%;
+	}
+}
