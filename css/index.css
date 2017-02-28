@@ -190,3 +190,144 @@ hr
     margin: 20px 0 20px 0;
 	border-color: #BA0E31;
 }
+
+.collapse
+{
+	display: none;
+}
+
+.collapse + input
+{
+	display: none;
+}
+
+.collapse + input:checked + div
+{
+	display:none;
+}
+
+@media screen and (max-width: 1248px)
+{
+	#logo
+	{
+		margin-left: -30px;
+		background: url(../img/logo_mobile.png) no-repeat center;
+	}
+
+		#menu
+	{
+		float: right;
+		margin-right: 10px;
+		display: inline-block;
+		width: 50px;
+		height: 50px;
+		background: url(../img/menu.png) no-repeat center;
+	}
+
+	nav ul, nav:active ul
+	{
+		display: none;
+		z-index: 1000;
+		position: absolute;
+		background-color: #016FB9;
+		padding: 10px;
+		border: 1px solid #fff;
+		border-radius: 10px 0 10px 10px;
+		right: 10px;
+		top: 60px;
+		width: 50%;
+	}
+
+	nav:hover ul
+	{
+		display: block;
+	}
+
+	nav li
+	{
+		text-align: center;
+		width: 100%;
+		padding: 10px 0;
+		float: right;
+		margin-right: -15px;
+	}
+
+	.inner-wrapper
+	{
+		display: flex;
+		flex-flow: column;
+	}
+
+	#issue-list
+	{
+		width: 100%;
+		order: 2;
+	}
+
+	#issue-list-inner
+	{
+		margin: 5%;
+	}
+
+	#information
+	{
+		order: 1;
+		width: 100%;
+	}
+
+	#information-inner
+	{
+		margin: 5%;
+	}
+
+	.collapse
+	{
+		cursor: pointer;
+		display: block;
+		margin: 20px 10px 0 10px;
+		color: #BA0E31;
+		background-color: #00B31B;
+		padding: 10px;
+		font-size: 130%;
+		border: 1px solid #000;
+	}
+
+	div + .collapse
+	{
+		margin-top: 10px;
+	}
+
+	.collapse + input
+	{
+		display: none;
+	}
+
+	.collapse + input + div
+	{
+		display:none;
+	}
+
+	.collapse + input:checked + div
+	{
+		display:block;
+	}
+
+	#information h1
+	{
+		display: none;
+	}
+
+	#information div
+	{
+		margin: 0 10px;
+	}
+
+	.drop-down-icon
+	{
+		float: right;
+		width: 25px;
+		height: 25px;
+		background: url(../img/down_arrow.png) no-repeat center;
+		background-size: 25px;
+	}
+}

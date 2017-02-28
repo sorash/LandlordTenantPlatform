@@ -92,6 +92,11 @@
 
       <aside id="information">
         <div id="information-inner">
+          <label class="collapse" for="profile-drop-down">
+            Profile
+            <a class="drop-down-icon"></a>
+          </label>
+          <input id="profile-drop-down" type="checkbox">
           <div id="profile">
             <h1>Profile</h1>
 
@@ -100,6 +105,11 @@
             <p>phone</p>
           </div>
 
+          <label class="collapse" for="property-drop-down">
+            Property
+            <a class="drop-down-icon"></a>
+          </label>
+          <input id="property-drop-down" type="checkbox">
           <div id="property">
             <h1>Property</h1>
 
@@ -108,6 +118,11 @@
             <p>type</p>
           </div>
 
+          <label class="collapse" for="landlord-drop-down">
+            Landlord
+            <a class="drop-down-icon"></a>
+          </label>
+          <input id="landlord-drop-down" type="checkbox">
           <div id="landlord">
             <h1>Landlord</h1>
 
@@ -116,6 +131,11 @@
             <p>phone</p>
           </div>
 
+          <label class="collapse" for="tenants-drop-down">
+            Tenants
+            <a class="drop-down-icon"></a>
+          </label>
+          <input id="tenants-drop-down" type="checkbox">
           <div id="tenants">
             <h1>Tenants</h1>
 
@@ -130,6 +150,11 @@
             <p>tenant_phone</p>            
           </div>
 
+          <label class="collapse" for="roommates-drop-down">
+            Roommates
+            <a class="drop-down-icon"></a>
+          </label>
+          <input id="roommates-drop-down" type="checkbox">
           <div id="roommates">
             <h1>Roommates</h1>
 
