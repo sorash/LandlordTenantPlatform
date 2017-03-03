@@ -18,7 +18,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Welcome to LTP</title>
-	 <!-- <link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen" />-->
+	  <link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen" />
 	  <link rel="stylesheet" href="css/welcome.css"   type="text/css" media="screen" />
   </head>
 
