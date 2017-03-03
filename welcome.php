@@ -56,7 +56,7 @@
           <div id="EmailError" style="color:red;width:75%;"></div>
           <input type="password" placeholder="Enter Password" name="pass_confirmation" data-validation="strength" data-validation-strength="2" data-validation-error-msg-container="#PasswordError"  required>
           <div id="PasswordError" style="color:red;width:75%;"></div>
-          <input type="password" placeholder="Enter Password Again" name="pass" data-validation="confirmation"  type="password" data-validation-error-msg-container="#PasswordConfError" required>
+          <input type="password" placeholder="Enter Password Again" name="pass" data-validation="confirmation"  type="password"  data-validation-error-msg="Passwords don't match." data-validation-error-msg-container="#PasswordConfError" required>
          <div id="PasswordConfError" style="color:red;width:75%;"></div>
           <div id="userType">
             <label>I am a:</label>
