@@ -4,8 +4,9 @@
     require 'DBC.php';
     
     if($_GET && $_GET["exit"] == 1){
+        $_SESSION["LTPLogged"] = false;
         unset($_SESSION);
-        header("Location: welcome.php");
+        header("Location: login.php");
         exit();
     }
     

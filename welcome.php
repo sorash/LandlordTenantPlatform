@@ -6,18 +6,10 @@
     if($_POST){
         $db = new DBLink;
         $db->addUser($_POST);
+        header("Location: welcome.php");
+        exit();
     }
     
-/*// error messages
-$firstNameError = "";
-$lastNameError = "";
-$emailError = "";
-$passwordError = "";
-$password2Error = "";
-$userTypeError = "";*/
-
-    
-
 ?>
 
 <!DOCTYPE html>
@@ -56,12 +48,16 @@ $userTypeError = "";*/
 
       <aside id="register">
         <form method="POST">
-          <input type="text" placeholder="Enter First Name" name="firstName" id="firstName" data-validation="custom" data-validation-regexp="^([a-zA-Z]+)$" data-validation-error-msg="Invalid Name" data-validation-error-msg-container="#errorCon" required>
-          <input type="text" placeholder="Enter Last Name" name="lastName" id="lastName"   data-validation="custom" data-validation-regexp="^([a-zA-Z]+)$" data-validation-error-msg="Invalid Last Name"  data-validation-error-msg-container="#errorCon" required>
-          <input type="email" placeholder="Enter Email" name="email" id="email" data-validation="email" required>
-          <input type="password" placeholder="Enter Password" name="pass_confirmation" data-validation="strength" data-validation-strength="2" required>
-          <div id="errorCon" style="color:red;background:blue;width:75%;"></div><input type="password" placeholder="Enter Password Again" name="pass" data-validation="confirmation"  type="password" required>
-
+          <input type="text" placeholder="Enter First Name" name="firstName" id="firstName" data-validation="custom" data-validation-regexp="^([a-zA-Z ]+)$" data-validation-error-msg="Invalid Name" data-validation-error-msg-container="#FirstNameError" required>
+          <div id="FirstNameError" style="color:red;width:75%;"></div>
+          <input type="text" placeholder="Enter Last Name" name="lastName" id="lastName"   data-validation="custom" data-validation-regexp="^([a-zA-Z ]+)$" data-validation-error-msg="Invalid Last Name"  data-validation-error-msg-container="#LastNameError" required>
+          <div id="LastNameError" style="color:red;width:75%;"></div>
+          <input type="email" placeholder="Enter Email" name="email" id="email" data-validation="email"  data-validation-error-msg-container="#EmailError"  data-validation-error-msg="Invalid Email" required>
+          <div id="EmailError" style="color:red;width:75%;"></div>
+          <input type="password" placeholder="Enter Password" name="pass_confirmation" data-validation="strength" data-validation-strength="2" data-validation-error-msg-container="#PasswordError"  required>
+          <div id="PasswordError" style="color:red;width:75%;"></div>
+          <input type="password" placeholder="Enter Password Again" name="pass" data-validation="confirmation"  type="password" data-validation-error-msg-container="#PasswordConfError" required>
+         <div id="PasswordConfError" style="color:red;width:75%;"></div>
           <div id="userType">
             <label>I am a:</label>
             <input type="radio" name="userType" id="landlord"><label for="landlord">Landlord</label>

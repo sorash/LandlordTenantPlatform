@@ -19,8 +19,8 @@
             
             $_SESSION["LTPUserName"] = $row["FirstName"] . " " . $row["LastName"] ;
             /*$_SESSION["LTPUserPhone"] = $row["Phone"];
-            $_SESSION["LTPUserEmail"] = $row["Email"];*/
-            $_SESSION["LTPUserID"] = $row["ID"];
+            $_SESSION["LTPUserEmail"] = $row["Email"];
+            $_SESSION["LTPUserID"] = $row["ID"];*/
             $_SESSION["LTPLogged"] = true;
             header("Location: index.php");
             exit();
